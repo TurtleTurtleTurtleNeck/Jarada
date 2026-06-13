@@ -1,0 +1,51 @@
+# ─────────────────────────────────────────────
+#  Python / ML
+# ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Raw / large ML datasets — keep the dir, ignore the contents
+ml/data/raw/*
+!ml/data/raw/.gitkeep
+
+# Trained / exported model binaries — keep the dir, ignore the artifacts
+ml/models/*
+!ml/models/.gitkeep
+*.pkl
+*.joblib
+*.h5
+*.keras
+*.tflite
+*.onnx
+*.pt
+*.pth
+
+# ─────────────────────────────────────────────
+#  Firmware / PlatformIO build artifacts
+# ─────────────────────────────────────────────
+firmware/.pio/
+firmware/.pioenvs/
+firmware/.piolibdeps/
+*.elf
+*.hex
+*.bin
+*.map
+
+# ─────────────────────────────────────────────
+#  App design — heavy raw exports (commit specs, not source binaries)
+# ─────────────────────────────────────────────
+*.fig
+
+# ─────────────────────────────────────────────
+#  OS / editor
+# ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
